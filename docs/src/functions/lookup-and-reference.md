@@ -6,7 +6,7 @@ lang: en-US
 
 # Lookup and Reference functions
 
-At the moment IronCalc only supports a few function in this section.  
+At the moment IronCalc only supports a few functions in this section.  
 You can track the progress in this [GitHub issue](https://github.com/ironcalc/IronCalc/issues/52).
 
 | Function     | Status                                         | Documentation |
@@ -32,8 +32,8 @@ You can track the progress in this [GitHub issue](https://github.com/ironcalc/Ir
 | LOOKUP       | <Badge type="tip" text="Available" />          | –             |
 | MATCH        | <Badge type="tip" text="Available" />          | –             |
 | OFFSET       | <Badge type="tip" text="Available" />          | –             |
-| ROW          | <Badge type="tip" text="Available" />          | –             |
-| ROWS         | <Badge type="info" text="Not implemented yet" /> | –             |
+| ROW          | <Badge type="tip" text="Available" />          | [ROW](lookup_and_reference/row)             |
+| ROWS         | <Badge type="tip" text="Available" />          | [ROWS](lookup_and_reference/rows)             |
 | RTD          | <Badge type="info" text="Not implemented yet" /> | –             |
 | SORT         | <Badge type="info" text="Not implemented yet" /> | –             |
 | SORTBY       | <Badge type="info" text="Not implemented yet" /> | –             |

@@ -11,7 +11,7 @@ The ROW function in IronCalc is a lookup & reference formula that is used to que
 ### Syntax
 **ROW(<span title="Reference" style="color:#1E88E5">reference</span>) => <span title="Number" style="color:#1E88E5">row</span>**
 ### Argument descriptions
-* *reference* ([cell](/features/value-types#references), [optional](/features/optional-arguments.md)). The cell, row, range, or [Named Range](/web-application/name-manager.html) for which you wish to find the row number.
+* *reference* ([cell](/features/value-types#references), [optional](/features/optional-arguments.md)). The cell, range, or [Named Range](/web-application/name-manager.html) for which you wish to find the row number.
 ### Additional guidance
 * When referencing a range of cells, only the row number of the uppermost cell will be returned.
 * Entire columns or rows can also be referenced.
@@ -31,9 +31,11 @@ The ROW function can only be used to display the correlating number of a single 
 ### No Cell Reference
 When no cell reference is made, the formula uses **=ROW()**. This will output the row number of the cell where the formula is entered.<br><br>For example, if the formula is placed in cell A1, then "1" will be displayed.
 ### With Cell Reference
-When a cell reference is made, the formula uses **=ROW(<span title="Reference" style="color:#1E88E5">Referenced Cell</span>)**. This will then output the row number of the referenced cell, regardless of where the formula is placed in the sheet.<br><br>If **B2** is the referenced cell, then "2" will be the output of the formula, regardless of where the formula is placed in the sheet.<br><br>**Note:** references do not have to be specific cells, you can also reference complete rows. For example, **=ROW(<span title="Reference" style="color:#1E88E5">3:3</span>)** would also result in an output of "3".
+When a cell reference is made, the formula uses **=ROW(<span title="Reference" style="color:#1E88E5">Referenced Cell</span>)**. This will then output the row number of the referenced cell, regardless of where the formula is placed in the sheet.<br><br>If **B2** is the referenced cell, then "2" will be the output of the formula, regardless of where the formula is placed in the sheet.
+### Row References
+Entire rows can also be referenced. However, these must be formatted as a range. For example, **=ROW(<span title="Reference" style="color:#1E88E5">3:3</span>)** would also result in an output of "3".
 ### Range References
-The ROW function can also be used to reference a range of cells or rows. In this case only the uppermost row will be the resulting output.<br><br>For example, **=ROW(<span title="Reference" style="color:#1E88E5">A1:A10</span>)** will result in the output of "1".
+The ROW function can also be used to reference a range of cells or rows. In this case only the uppermost row will be the resulting output.<br><br>For example, **=ROW(<span title="Reference" style="color:#1E88E5">A1:C10</span>)** will result in the output of "1".
 ### Anchoring References
 ROW can also be used to anchor or offset rows from the starting point. This is useful when using the first row of the sheet as headers.<br><br>For Example, **=ROW(<span title="Reference" style="color:#1E88E5">A2</span>)-1** would result in an output of "1".<br><br>In another use, you can also use ROW to anchor a starting point using *absolute* references. Here, **=ROW()-ROW(<span title="Reference" style="color:#1E88E5">$F$2</span>)+1** could be used to always treat sheet row 2 as the starting point for your rows.
 ## Links
